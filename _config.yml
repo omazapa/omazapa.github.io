@@ -1,4 +1,22 @@
-name: Arcana
-description: Sergei Gleyzer
-paginate: 10
+name: CERN Fellowship
+description: Scientific Software 
+author: Omar Zapata
+email: Omar.Zapata@cern.ch
+plugins: [jekyll-assets, jekyll-paginate, jekyll-toc, jekyll-include-cache, sass, github-pages, kramdown, rouge]
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  parse_block_html: true
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+paginate: 3
+paginate_path: /page:num/
 baseurl: ''
+
+##original header
+#name: CERN Fellowship
+#description: CERN Fellowship
+#paginate: 10
+#baseurl: ''
+

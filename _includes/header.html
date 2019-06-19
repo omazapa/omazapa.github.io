@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Sergei Gleyzer's Website</title>
+		<title>CERN Fellowship</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -20,7 +20,14 @@
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-pagination.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-toc.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-lists.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-github-syntax.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-menu-project.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-oproject.css" />
 		</noscript>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
@@ -29,7 +36,7 @@
 			<div id="header">
 						
 				<!-- Logo -->
-<!-- 					<h1><a href="{{ site.baseurl }}/index.html" id="logo"><em>Sergei V. Gleyzer's Personal Webpage</em></a></h1> -->
+					<!-- <h1><a href="{{ site.baseurl }}/index.html" id="logo"><em>CERN & All-In-Image / CERN - KT Project</em></a></h1> -->
 				
 				<!-- Nav -->
 					<nav id="nav">
@@ -37,11 +44,11 @@
 							{% assign current = page.url | downcase | split: '/' %}
 							<li {% if current[1] == 'index.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
 							<li>
-								<a href="{{ site.baseurl }}/pages/Bio.html">Bio</a>
-<!--								<ul>
-									<li><a href="#">Lorem dolor</a></li>
-									<li><a href="#">Magna phasellus</a></li>
-									<li><a href="#">Etiam sed tempus</a></li>
+								<a href="{{ site.baseurl }}/pages/projects.html">Projects</a>
+								<ul>
+									<li><a href="#">SWAN GPU</a></li>
+									<li><a href="#">SWAN Micro Services</a></li>
+									<!-- <li><a href="#">Etiam sed tempus</a></li>
 									<li>
 										<a href="">Submenu</a>
 										<ul>
@@ -52,14 +59,12 @@
 											<li><a href="#">Veroeros feugiat</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Veroeros feugiat</a></li>
-								</ul>-->
+									<li><a href="#">Veroeros feugiat</a></li> -->
+								</ul>
 							</li>
-							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/Research.html">Research</a></li>
-							<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/Publications.html">Publications</a></li>
-							<li {% if current[1] == 'right-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/Teaching.html">Teaching</a></li>
-							<li {% if current[1] == 'two-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/two-sidebar.html">Outreach</a></li>
-							<li {% if current[1] == 'no-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">Contact</a></li>
+							<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/documentation.html">Documentation</a></li>
+							<li {% if current[1] == 'right-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/meetings.html">Meetings</a></li>
+							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
 						</ul>
 					</nav>
 
