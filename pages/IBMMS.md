@@ -4,7 +4,6 @@ layout: content
 toc: true
 ---
 
-# IBM Microservices using Jupyter Kernel Gateway
 
 * Table of Contents 
 {:toc}
