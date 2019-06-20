@@ -90,3 +90,4 @@ For the general architecture see the next image:
 * [https://community.amd.com/community/radeon-instinct-accelerators/blog/2018/11/13/the-amd-deep-learning-stack-using-docker](https://community.amd.com/community/radeon-instinct-accelerators/blog/2018/11/13/the-amd-deep-learning-stack-using-docker)
 * [https://github.com/RadeonOpenCompute/ROCm](https://github.com/RadeonOpenCompute/ROCm)
 * [https://rocm.github.io/](https://rocm.github.io/)
+

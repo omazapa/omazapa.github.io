@@ -1,4 +1,26 @@
 ol li{
     padding-left: 0.5cm;
     font-size: 90%;
+    list-style-type: square;
+}
+
+.l0:before
+{
+    padding-left: 1cm;
+    content:"• ";
+}
+.l1:before
+{
+    padding-left: 2cm;
+    content:"• ";
+}
+.l2:before
+{
+    padding-left: 3cm;
+    content:"• ";
+}
+.l3:before
+{
+    padding-left: 4cm;
+    content:"• ";
 }
