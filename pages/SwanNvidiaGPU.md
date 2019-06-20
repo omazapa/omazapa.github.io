@@ -10,8 +10,8 @@ toc: true
 
 <table style="width:100%">
   <tr>
-    <td colspan="2" style="text-align:center"><img src="/img/logo_swan_letters.png" style="width:250px"/></td>
-    <td style="text-align:center"><img src="/img/nvidiacuda.png" style="width:250px" /></td>
+    <td colspan="2" style="text-align:center"><img src="{{ site.baseurl }}/img/logo_swan_letters.png" style="width:250px"/></td>
+    <td style="text-align:center"><img src="{{ site.baseurl }}/img/nvidiacuda.png" style="width:250px" /></td>
   </tr>
 </table>
 
@@ -28,8 +28,8 @@ This is a wiki to configure nvidia support in docker, We will explain how to con
 -----------
 # NVidia architecture
 -----------
-The NVidia Gpu is a procesor that has different architectures (Turing, Volta, Pascal, Maxwell, Kepler and Fermi) according to the generation of the hardware of the specifications required by the market.
-The basic difference with the CPU is that allows to do vectorial operations instead scalar operations, that is very useful to process elements like a vectors, matrices or in general Tensors, that are very used in mathematical problems like for example machine learning algorithms.
+The NVidia Gpu is a processor that has different architectures (Turing, Volta, Pascal, Maxwell, Kepler and Fermi) according to the generation of the hardware and the specifications required by the market.
+The basic difference with the CPU is that allows to do vectorial operations instead scalar operations, that is very useful to process elements like a vectors, matrices or in general Tensors, that are used in mathematical problems like for example machine learning algorithms.
 Nvidia has support through docker using the next schema.
 
 
@@ -73,24 +73,8 @@ nvidia-smi
 ```
 
 you should see something like
-```sh
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 430.14       Driver Version: 430.14       CUDA Version: 10.2     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|===============================+======================+======================|
-|   0  Tesla V100-PCIE...  Off  | 00000000:00:05.0 Off |                    0 |
-| N/A   43C    P0    36W / 250W |      0MiB / 32510MiB |      0%      Default |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-```
+
+<img src='{{ site.baseurl }}/img/nvidia-smi-example.png'/>
 
 -----------
 ## Install Docker CE
@@ -144,11 +128,6 @@ Installing CVMFS Docker
 yum install -y docker-volume-cvmfs atlas
 ```
 
-Starting the service
-```sh
-systemctl restart docker-volume-cvmfs
-```
-
 -----------
 ## Install nvidia-docker
 -----------
@@ -172,10 +151,6 @@ sudo yum install -y nvidia-docker2
 sudo pkill -SIGHUP dockerd
 ```
 
------------
-## Configure CVMFS volumes and mount points
------------
-TODO
 
 -----------
 ## Create Docker Images
@@ -196,18 +171,3 @@ docker run --runtime=nvidia --rm -it -v /usr/lib64:/usr/lib64 -v /cvmfs:/cvmfs:s
 -----------
 <b>1)</b> The dependency between CUDA/CUDNN and Ndivia drivers can be confuse and maybe a nightmare, there is some charts about how to configure the hardware and software to use NVidia with CUDA according to the GPU architecture (See [link](https://docs.nvidia.com/deploy/cuda-compatibility/index.html)) <br>
 <b>2)</b> We can not put limitations for users in hardware (See [link](https://github.com/nvidia/nvidia-docker/wiki/Frequently-Asked-Questions#can-i-limit-the-gpu-resources-eg-bandwidth-memory-cuda-cores-taken-by-a-container)) <br>
-
-# References
------------
-
-* [https://devblogs.nvidia.com/nvidia-docker-gpu-server-application-deployment-made-easy/](https://devblogs.nvidia.com/nvidia-docker-gpu-server-application-deployment-made-easy/)
-* [https://github.com/nvidia/nvidia-docker/wiki/Frequently-Asked-Questions](https://github.com/nvidia/nvidia-docker/wiki/Frequently-Asked-Questions)
-* [https://docs.nvidia.com/deploy/cuda-compatibility/index.html](https://docs.nvidia.com/deploy/cuda-compatibility/index.html)
-* [https://developer.nvidia.com/cuda-faq](https://developer.nvidia.com/cuda-faq)
-* [https://github.com/NVIDIA/nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
-* [https://www.amd.com/en/graphics/servers-radeon-instinct-deep-learning](https://www.amd.com/en/graphics/servers-radeon-instinct-deep-learning)
-* [https://community.amd.com/community/radeon-instinct-accelerators/blog/2018/11/13/the-amd-deep-learning-stack-using-docker](https://community.amd.com/community/radeon-instinct-accelerators/blog/2018/11/13/the-amd-deep-learning-stack-using-docker)
-* [https://github.com/RadeonOpenCompute/ROCm](https://github.com/RadeonOpenCompute/ROCm)
-* [https://rocm.github.io/](https://rocm.github.io/)
-* [https://gitlab.cern.ch/cloud-infrastructure/docker-volume-cvmfs/](https://gitlab.cern.ch/cloud-infrastructure/docker-volume-cvmfs/)
-* 

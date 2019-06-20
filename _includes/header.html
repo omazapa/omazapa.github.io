@@ -62,7 +62,13 @@
 									<li><a href="#">Veroeros feugiat</a></li> -->
 								</ul>
 							</li>
-							<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/documentation.html">Research</a></li>
+							<li {% if current[1] == 'left-sidebar.html' %}class="current"{% endif %}>
+								<a href="{{ site.baseurl }}/pages/documentation.html">Research</a>
+								<ul>
+										<li><a href="{{ site.baseurl }}/pages/SwanGPU.html">SWAN GPU (Nvidia and AMD)</a></li>
+										<li><a href="{{ site.baseurl }}/pages/IBMMS.html">IBM Microservices (Kernel gateway )</a></li>
+								</ul>
+							</li>
 							<li {% if current[1] == 'right-sidebar.html' %}class="current"{% endif %}><a href="{{ site.baseurl }}/pages/meetings.html">Meetings</a></li>
 							<li {% if current[1] == 'blog' %}class="current"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
 						</ul>

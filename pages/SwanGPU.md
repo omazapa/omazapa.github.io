@@ -1,19 +1,20 @@
 ---
 title: Swan GPU
-layout: default
+layout: content
 toc: true
 ---
+
 # Studies of Docker/GPU architectures for SWAN
 {:.no_toc}
 -
 
 <table style="width:100%">
   <tr>
-    <td colspan="2" style="text-align:center"><img src="/img/logo_swan_letters.png" style="width:250px"/></td>
+    <td colspan="2" style="text-align:center"><img src="{{ site.baseurl }}/img/logo_swan_letters.png" style="width:250px"/></td>
   </tr>
   <tr>
-    <td style="text-align:center"><img src="/img/nvidiacuda.jpg" style="width:250px" /></td>
-    <td style="text-align:center"><img src="/img/AMD_Radeon_logo.png" style="width:250px" /></td>
+    <td style="text-align:center"><img src="{{ site.baseurl }}/img/nvidiacuda.png" style="width:250px" /></td>
+    <td style="text-align:center"><img src="{{ site.baseurl }}/img/AMD_Radeon_logo.png" style="width:250px" /></td>
   </tr>
 </table>
 
@@ -56,7 +57,7 @@ Nvidia has support through docker using the next schema.
 The Radeon GPUs has support for machine learning frameworks too. The architecture in docker is similar to the implemented in NVidia schema.
 
 <center>
-<img src="/img/AmdDocker.jpg" style="width:80%"  />
+<img src="{{ site.baseurl }}/img/AmdDocker.jpg" style="width:80%"  />
 </center>
 
 ## Notes
@@ -75,7 +76,7 @@ For the general architecture see the next image:
 <b>3)</b> CUDA(Nvidia),  ROCm(AMD) frameworks, the machine learning packages, software and services provided by CERN like CVMFS, ROOT etc.. will be installed in the docker image. <br>
 
 <center>
-    <img src="/img/GpuDocker.png"  />
+    <img src="{{ site.baseurl }}/img/GpuDocker.png"  />
 </center>
 
 
