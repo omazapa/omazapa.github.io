@@ -23,7 +23,7 @@ toc: true
 -----------
 # Description
 -----------
-This is a wiki to configure nvidia support in docker, We will explain how to configure the host and the docker images, to run for example tensoflow application.
+TODO
 
 -----------
 # Architecture
