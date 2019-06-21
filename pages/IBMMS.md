@@ -52,7 +52,7 @@ You can see more information on [https://jupyter-enterprise-gateway.readthedocs.
 
 # The SWAN Microservices Proposal 
 ---------------
-Please read this page with the proposal <a href='{{ site.baseurl }}/pages/SWANMS.html'>SWAN MS</a>
+Please read this page with the proposal <a href='{{ site.baseurl }}/pages/SwanMS.html'>SWAN MS</a>
 
 
 # References
