@@ -4,7 +4,7 @@ layout: content
 toc: true
 ---
 
-# Studies of Docker/GPU architectures for SWAN
+# Studies on Docker/GPU architectures for SWAN
 {:.no_toc}
 -
 
