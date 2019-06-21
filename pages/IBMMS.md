@@ -46,7 +46,7 @@ The Jupyter Kernel Gateway has the following features:
 # The IBM's Jupyter Enterprise Gateway
 ---------------
 IBM has a development to use Jupyter gateway in a enterprise platform [https://developer.ibm.com/open/projects/jupyter-enterprise-gateway/](https://developer.ibm.com/open/projects/jupyter-enterprise-gateway/).
-The are doing the intregartion with Spark Clusters and given support to administrative UI, that allows to take actions  over the jupyter kernels, also you can to deploy customized environments using Kubertenes.
+They are doing the intregartion with Spark Clusters and given support to an administrative UI, that allows to take actions  over the jupyter kernels, also you can to deploy customized environments using Kubertenes.
 You can see more information on [https://jupyter-enterprise-gateway.readthedocs.io/en/latest/](https://jupyter-enterprise-gateway.readthedocs.io/en/latest/) and in the github repository [https://github.com/jupyter/enterprise_gateway](https://github.com/jupyter/enterprise_gateway)
 
 
