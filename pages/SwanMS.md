@@ -38,7 +38,42 @@ in the Jupyter notebook interface.
 -----------
 # Prototype
 -----------
-The probe of concept is developed in python with Flask, launching the kernel gateway with sub process, but in principle, the notebook can be executed with the kernel gateway 
+The probe of concept is developed in python 3 with Flask, we are launching the kernel gateway with a sub-process module, but in principle, the notebook can be executed with the kernel gateway 
 using other approaches like docker or job-schedulers.
 
+To install and test it, please follow the next steps.
 
+Downloading and installing requirements
+
+```.sh
+git clone https://gitlab.cern.ch/ozapatam/swanms.git
+cd swanms/
+pip3 install -r requirements.txt --user
+```
+
+Starting the server
+
+```.sh
+./swanms_server 
+```
+
+The output is someting like:
+
+```
+ozapatam@tuxito-sft:~/Swan/swanms$ ./swanms_server 
+ * Static Dir = /home/ozapatam/Swan/swanms/static
+ * Templates Dir = /home/ozapatam/Swan/swanms/templates
+ * Warning! Directory  /home/ozapatam/Swan/swanms/./microservices/  already exists
+ * Serving Flask app "swanms.swanms_server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Static Dir = /home/ozapatam/Swan/swanms/static
+ * Templates Dir = /home/ozapatam/Swan/swanms/templates
+ * Warning! Directory  /home/ozapatam/Swan/swanms/./microservices/  already exists
+ * Debugger is active!
+ * Debugger PIN: 112-751-545
+```
