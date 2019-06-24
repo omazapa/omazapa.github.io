@@ -41,6 +41,19 @@ Nvidia has support through docker using the next schema.
 
 
 -----------
+# SWAN GPU architecture
+-----------
+
+The GPU will be expose in the container through a nvidia-docker connector that allows to use directly the device, but at the moment
+there is not way to control the memory and cuda cores between the users.
+The CMVFS will have a machine learning stack of software ready to use in the GPU device, using nvidia techonolies like cuda, cudnn and cublas 
+Also some machine learning popular packages like tensorflow, PyTorch, Scikit-Learn  and more.
+<center>
+<img src='{{ site.baseurl }}/img/SWAN_GPU_ARCH.png' />
+</center>
+
+
+-----------
 # Centos 7 Host Configuration
 -----------
 
