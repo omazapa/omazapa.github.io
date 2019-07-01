@@ -21,7 +21,7 @@ We can split a GPU into a set of [vGPUs](https://www.nvidia.com/en-us/data-cente
 
 <center>
 <img src='https://docs.nvidia.com/grid/latest/grid-vgpu-user-guide/graphics/architecture-grid-vgpu.png'/>
-<img src='{{ site.baseurl }}/img/design-visualization-virtual-gpu-technology.jpg'/>
+<img src='{{ site.baseurl }}/img/design-visualization-virtual-gpu-technology.png'/>
 </center>
 
 
