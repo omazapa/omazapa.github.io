@@ -6,6 +6,8 @@ toc: true
 
 # Docker/GPU architectures for SWAN with NVidia GPUs
 
+**NOTE:** The code was integrated to the official SWAN repositories
+
 {:.no_toc}
 
 <table style="width:100%">
@@ -164,20 +166,6 @@ sudo yum install -y nvidia-docker2
 sudo pkill -SIGHUP dockerd
 ```
 
-
------------
-## Create Docker Images
------------
-TODO
-
------------
-## Running Docker Images
------------
-
-<p style='color:red'>**WARNING**: this code can hang up your server. Use it with care.</p>
-```sh
-docker run --runtime=nvidia --rm -it -v /usr/lib64:/usr/lib64 -v /cvmfs:/cvmfs:shared swan-cuda9 /bin/bash
-```
 
 -----------
 ## Notes
