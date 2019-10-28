@@ -5,6 +5,7 @@ layout: content
 
 # All-in-Image - CERN EP-SFT
 
+- {:.l0} 24 oct. 2019 14:00 → 15:00 - [https://indico.cern.ch/event/858822/](https://indico.cern.ch/event/858822/)
 - {:.l0}  5 Aug 2019, 14:00  → 15:30 - [https://indico.cern.ch/event/839091/](https://indico.cern.ch/event/839091/)
 - {:.l0} 11 jun. 2019 10:00  → 12 jun. 2019 18:00  - [https://indico.cern.ch/event/824360/](https://indico.cern.ch/event/824360/)
 
